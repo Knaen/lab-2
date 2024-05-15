@@ -1,0 +1,15 @@
+def ədəd_ortası(massiv):
+    bölük_uzunluğu = len(massiv) // 3
+    qalıq = len(massiv) % 3
+    
+    if qalıq == 2:
+        ədədlər = massiv[-2:]
+        orta_ədəd = sum(ədədlər) / 2
+        print("Qalıqda olan iki ədədlərin ortası:", orta_ədəd)
+    else:
+        print("Qalıqda iki ədəd yoxdur.")
+
+# Massivi daxil etmək
+massiv = [5, 10, 15, 20, 25, 30, 35]
+
+ədəd_ortası(massiv)
